@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "PlayZone Arcade - Virtual Demo Hub",
+  "short_name": "PlayZone",
+  "description": "Mobile-first demo arcade hub with 20 mini-games using fictional virtual points for entertainment only.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090d16",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

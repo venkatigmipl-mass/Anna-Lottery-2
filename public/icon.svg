@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <circle cx="256" cy="256" r="210" stroke="url(#accent)" stroke-width="8" fill="none" opacity="0.3" stroke-dasharray="16 12" />
+  <!-- Gamepad icon -->
+  <path d="M160 210 C130 210 110 230 100 270 C85 330 110 370 145 370 C170 370 185 340 205 340 L307 340 C327 340 342 370 367 370 C402 370 427 330 412 270 C402 230 382 210 352 210 Z" fill="#1e293b" stroke="url(#neon)" stroke-width="12" />
+  <!-- D-pad -->
+  <path d="M165 245 H185 V265 H205 V285 H185 V305 H165 V285 H145 V265 H165 Z" fill="url(#accent)" />
+  <!-- Buttons -->
+  <circle cx="330" cy="255" r="10" fill="#ef4444" />
+  <circle cx="360" cy="275" r="10" fill="#10b981" />
+  <circle cx="330" cy="295" r="10" fill="#3b82f6" />
+  <circle cx="300" cy="275" r="10" fill="#f59e0b" />
+  <!-- Center Star -->
+  <path d="M256 120 L268 158 L308 158 L275 182 L288 220 L256 196 L224 220 L237 182 L204 158 L244 158 Z" fill="url(#accent)" />
+</svg>
