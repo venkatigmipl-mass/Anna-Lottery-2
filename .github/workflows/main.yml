@@ -29,13 +29,10 @@ jobs:
       - name: Add Capacitor
         run: |
           rm -rf android capacitor.config.ts capacitor.config.js capacitor.config.json
-          npm install @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6 @capacitor/filesystem@6 @capacitor/share@6 @capacitor/app@6 --legacy-peer-deps --no-audit --no-fund
-          echo '{"appId":"com.docscan.studio","appName":"DocScan Studio","webDir":"dist"}' > capacitor.config.json
+          npm install @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6 @capacitor/app@6 --legacy-peer-deps --no-audit --no-fund
+          echo '{"appId":"com.playzone.demo","appName":"PlayZone","webDir":"dist"}' > capacitor.config.json
           npx cap add android
-
-      - name: Add camera permission
-        run: |
-          sed -i 's#<application#<uses-permission android:name="android.permission.CAMERA" /><application#' android/app/src/main/AndroidManifest.xml
+          ls android
 
       - name: Sync and build APK
         run: |
@@ -46,5 +43,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: DocScanStudio-APK
+          name: PlayZone-APK
           path: android/app/build/outputs/apk/debug/app-debug.apk
